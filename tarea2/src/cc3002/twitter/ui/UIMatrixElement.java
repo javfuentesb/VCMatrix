@@ -28,9 +28,18 @@ public class UIMatrixElement extends JComponent{
 		this.shape=shape;
 	}
 	
+	
 	public void setShape(UIShape shape){
 		this.shape=shape;
 		updateUI();
+	}
+	
+	/**Añadido
+	 * Devuelve el shape del elemento
+	 * @return shape del elemento
+	 */
+	public UIShape getShape(){
+		return shape;
 	}
 	
 	@Override

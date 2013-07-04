@@ -1,4 +1,4 @@
-package cc3002.tarea2.test;
+package cc3002.tarea3.test;
 
 import static org.junit.Assert.*;
 
@@ -7,8 +7,8 @@ import java.io.FileNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
 
-import cc3002.tarea2.Twit;
-import cc3002.tarea2.TwitList;
+import cc3002.tarea3.twit.Twit;
+import cc3002.tarea3.twit.TwitList;
 
 public class TwitTest {
 	TwitList twitlist;

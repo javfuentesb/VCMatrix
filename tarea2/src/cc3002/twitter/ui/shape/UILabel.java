@@ -37,5 +37,12 @@ public abstract class UILabel extends UIShape{
         GlyphVector gv = g2.getFont().createGlyphVector(frc, str);
         return gv.getPixelBounds(null, x, y);
     }
+	/**Añadido.
+	 * Devuelve el texto que muestra el label
+	 * @return String correspondiente al texto del label
+	 */
+	public String getText() {
+		return text;
+	}
 
 }
