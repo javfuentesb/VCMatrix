@@ -37,12 +37,15 @@ public class TwitTest {
 		
 	}
 	@Test
-	public void testParse() throws FileNotFoundException{
+	public void testTwitList() throws FileNotFoundException{
 		Twit twit3= new Twit("@GracieWhitton","en","RT @GracieWhitton: I need 16 more followers to 2500. I know you are out there!! Come on folks. :)");
 		twitlist.addTwitsfromFile("./twitter/data.txt");
 		assertEquals(twitlist.numberofTwits(new String[]{"have","come"}),0);
 		assertTrue(twitlist.getTwit(0).equals(twit3));
-		
+		assertEquals(twitlist.length(),200);
+		twitlist.removeTwit(0);
+		assertEquals(twitlist.length(),199);
 	}
+
 
 }
